@@ -23,7 +23,7 @@ if (isset($ssr_config) && is_array($ssr_config) && is_array($ssr_config['configs
 
         $surge_proxy_groups .= "{$server_name[0]},";
     }
-    $surge_proxy_groups .= "url = http://www.youtube.com";
+    $surge_proxy_groups .= "url = http://www.gstatic.com/generate_204";
 
     $output = $surge_config.$surge_proxy_groups;
 
