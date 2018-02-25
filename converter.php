@@ -18,7 +18,7 @@ if (isset($ssr_config) && is_array($ssr_config) && is_array($ssr_config['configs
 
 //        print_r($v); break;
         $server_name = explode(" ",$v['remarks']);
-        $row = "{$server_name[0]} = custom, {$v['server']}, {$v['server_port']}, {$v['method']}, {$v['password']}, {$surge_module} ".PHP_EOL;
+        $row = "{$server_name[0]} = custom, {$v['server']}, {$v['server_port']}, {$v['method']}, {$v['password']}, {$surge_module}".PHP_EOL;
         $surge_config .= $row;
 
         $surge_proxy_groups .= "{$server_name[0]},";
